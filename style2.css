@@ -1,0 +1,66 @@
+@media screen and (max-width: 480px) {
+    .header .logo {
+    position: absolute;
+    margin-left: 10px;
+    }
+    .section p {
+    position: absolute;
+    width: 70vw;
+    font-size: 30px;
+    margin-top: 25vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    }
+    .products .h {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    }
+    .strPicture {
+    overflow-x: scroll;
+        display: flex;
+        height: 150px;
+        white-space: nowrap;
+        width: 100%;
+    }
+    .strPicture .picture {
+        margin-left: 150px;
+        display:inline;
+    }
+    .strPicture .picture .btn {
+        background: url(linx.png) no-repeat center;
+        width: 100px;
+        height: 100px;
+    }
+    .strPicture .block {
+    display: none;
+    width: 218px;
+        position: fixed;
+        margin-left: 50px;
+    padding: 10px;
+    color: white;
+    background: #262626;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    border-radius: 20px;
+    text-align: center;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+    }
+    .strPicture img {
+    width: 110px;
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+}

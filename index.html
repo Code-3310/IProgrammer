@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>IProgrammer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+    $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+    });
+    });
+</script>
+</head>
+<body>
+   <div class="header">
+        <a class="logo" href="index.html">IProgrammer</a>
+        <a class="btn" href="indexrecuest.html">Заказать</a>
+    </div>
+    <div class="section">
+        <p>Открой для себя IProgrammer<br> Мы знаем, что ты ищешь</p>
+    </div>
+    <div class="products">
+        <p class="h">Продукты наших программистов</p>
+        <div class="strPicture">
+            <div class="picture">
+               <img src="linx.png" alt="Linux">
+                <div class="block">
+                    <p>Лучшая ОС для серверов</p>
+                    <button onclick="window.location.href = 'https://www.linux.org/';">Скачать</button>
+                </div>
+            </div>
+            <div class="picture"><img src="gith2.png" alt="Github">
+                <div class="block">
+                    <p>Хостинг IT-проектов</p>
+                    <button onclick="window.location.href = 'https://github.com/';">Скачать</button>
+                </div>
+            </div>
+            <div class="picture"><img src="rct.png" alt="React">
+                <div class="block">
+                    <p>JavaScript фреймворк</p>
+                    <button onclick="window.location.href = 'https://reactjs.org/';">Скачать</button>
+                </div>
+            </div>
+            <div class="picture"><img src="go.png" alt="Go">
+                <div class="block">
+                    <p>Язык программирования для Web</p>
+                    <button onclick="window.location.href = 'https://golang.org/';">Скачать</button>
+                </div>
+            </div>
+            <div class="picture"><img src="mics.png" alt="Visual Studio">
+                <div class="block">
+                    <p>IDE от Microsoft</p>
+                    <button onclick="window.location.href = 'https://visualstudio.microsoft.com/ru/';">Скачать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <p>У нас можно найти программистов для любых задач</p>
+    </div>
+    <div class="main">
+        <div class="block1">
+           <img src="13.png" alt="man">
+           <p>Мы от него ничего не ждали, мало платили и часто про него забывали, а он взял и сотворил  чудо</p>
+        </div>
+        <div class="block2">
+            <p>Наш любимый программист, несмотря на то, что он очень странно работал. Всегда был при деньгах и редко появлялся в офисе, но каждый раз удивлял нас своими идеями</p>
+            <div class="content1"><img src="2.png" alt="Bill"></div>
+        </div>
+        <div class="block1">
+           <img src="3.png" alt="man">
+            <p>Наш самый умный и ценный программист, в одиночку он смог написать полноценную ОС. Ну как в одиночку, мы потом в процессе драки за ОС разделились на множество дистрибутивов</p>
+        </div>
+        <div class="block2">
+            <div class="content1"><img src="4.png" alt="man"></div>
+            <p>Это Игорь, сделает все, что скажете. Главное - не говорите, что JS плохой язык программирования</p>
+        </div>
+        <div class="block1">
+           <img src="5.png" alt="man">
+           <p>Сказали ему написать сайт с какой-нибудь новой фишкой, а он язык придумал. Хорошо хоть сайт сделал</p>
+           <h3>© IProgrammer Inc., 2021 г. Все права защищены</h3>
+        </div>
+    </div>
+    <div id = "toTop" class="toTop"><img src="up-removebg-preview.png" alt=""></div>
+</body>
+</html>

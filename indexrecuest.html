@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>IProgrammer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+    $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+    });
+    });
+</script> 
+</head>
+<body>
+   <div class="header">
+        <a class="logo" href="index.html">IProgrammer</a>
+        <a class="btn" href="indexrecuest.html">Заказать</a>
+    </div>
+    <div class="section3">
+       <p>Каждый наш программист прошел огонь и воду, поэтому не пугайтесь их взгляда...<br> и запаха</p>
+        <img src="Neud.png" alt="People">
+    </div>
+    <div class="block_1">
+        <div class="page">
+            <div class="content">
+                <img src="6.png" alt="man">
+                <div class="name"><p>Алексей</p></div>
+            </div>
+            <div class="card">
+                <div class="bl" id="card">
+                    <div class="triplePoint">
+                        <div class="point"><p>Время работы</p><span class="sp1">99</span></div><br>
+                        <div class="point"><p>Качество работы</p><span class="sp2">56</span></div><br>
+                        <div class="point"><p>Требования</p><span class="sp3">76</span></div>
+                    </div>
+                </div>
+                <button onclick="window.location.href = 'order1.html';" class="enter" id="btn1"><p>Заказать</p></button>
+            </div>
+            <p class="text">Дайте ему 3 энергетика, и он перепишет ваш легаси код за ночь</p>
+        </div>
+    </div>
+    <div class="block_2">
+        <div class="content">
+            <img src="7.png" alt="man">
+            <div class="name2"><p>Женек</p></div>
+        </div>
+        <div class="card">
+            <div class="bl2">
+                <div class="triplePoint">
+                    <div class="point2"><p>Время работы</p><span class="sp1">32</span></div><br>
+                    <div class="point2"><p>Качество работы</p><span class="sp2">98</span></div><br>
+                    <div class="point2"><p>Требования</p><span class="sp3">88</span></div>
+                </div>
+            </div>
+            <button onclick="window.location.href = 'order2.html';" class="enter2" id="btn2"><p>Заказать</p></button>
+        </div>
+        <p class="text2">Если ему понравится секретарша, прячьте ее, иначе найдете только через год в другой компании</p>
+    </div>
+    <div class="block_1">
+        <div class="content">
+            <img src="8.png" alt="man">
+            <div class="name"><p>Андрей</p></div>
+        </div>
+        <div class="card">
+            <div class="bl">
+               <div class="triplePoint">
+                <div class="point"><p>Время работы</p><span class="sp1">99</span></div><br>
+                <div class="point"><p>Качество работы</p><span class="sp2">53</span></div><br>
+                <div class="point"><p>Требования</p><span class="sp3">80</span></div>
+                </div>
+            </div>
+            <button onclick="window.location.href = 'order3.html';" class="enter" id="btn3"><p>Заказать</p></button>
+        </div>
+        <p class="text">Просто подкиньте его к конкурентам и наблюдайте за разрушением</p>
+    </div>
+    <div class="block_2">
+        <div class="content">
+            <img src="9.png" alt="man">
+            <div class="name2"><p>Натали</p></div>
+        </div>
+        <div class="card">
+            <div class="bl2">
+               <div class="triplePoint">
+                <div class="point2"><p>Время работы</p><span class="sp1">100</span></div><br>
+                <div class="point2"><p>Качество работы</p><span class="sp2">78</span></div><br>
+                <div class="point2"><p>Требования</p><span class="sp3">100</span></div>
+                </div>
+            </div>
+            <button onclick="window.location.href = 'order4.html';" class="enter2" id="btn4"><p>Заказать</p></button>
+        </div>
+        <p class="text2">Готова ко всему, кроме насекомых на рабочем столе</p>
+    </div>
+    <div class="block_1">
+        <div class="content">
+            <img src="10.png" alt="man">
+            <div class="name"><p>Николай</p></div>
+        </div>
+        <div class="card">
+            <div class="bl">
+                <div class="triplePoint">
+                    <div class="point"><p>Время работы</p><span class="sp1">1</span></div><br>
+                    <div class="point"><p>Качество работы</p><span class="sp2">100</span></div><br>
+                    <div class="point"><p>Требования</p><span class="sp3">X</span></div>
+                </div>    
+            </div>
+            <button onclick="window.location.href = 'order5.html';" class="enter" id="btn5"><p>Заказать</p></button>
+        </div>
+        <p class="text">У нас однажды сервера полетели, так он их всех переловил и крылья подрезал, золото, а не человек</p>
+    </div>
+    <div id = "toTop" class="toTop"><img src="up-removebg-preview.png" alt=""></div>
+</body>
+</html>
